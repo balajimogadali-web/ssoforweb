@@ -209,20 +209,9 @@
             const directLine = window.WebChat.createDirectLine({ token });
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
                 const { type } = action;
-                if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
-                    debuggger;
-                    dispatch({
-                        type: 'WEB_CHAT/SEND_EVENT',
-                        payload: {
-                            name: 'startConversation',
-                            type: 'event',
-                            value: { text: "hello" }
-                        }
-                    });
-                    return next(action);
-                }
+                console.log("Action:"+ action);
+               
                 if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
-                    debugger;
                     const activity = action.payload.activity;
                     let resourceUri;
                     if (activity.from && activity.from.role === 'bot' &&
