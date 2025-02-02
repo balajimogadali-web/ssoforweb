@@ -183,8 +183,8 @@
         (function () {
             var msalConfig = {
                 auth: {
-                    clientId: 'ff20bd23-60f5-42c0-af50-0e941194dce8',
-                    authority: 'https://login.microsoftonline.com/1661e837-0a95-4bc6-a655-865365c2419b'
+                    clientId: '8904da5f-32c2-4c52-b275-bce0e13cb4e9',
+                    authority: 'https://login.microsoftonline.com/0b4b330c-605f-4f15-89ee-60defddb876d'
                 },
                 cache: {
                     cacheLocation: 'localStorage',
@@ -199,7 +199,7 @@
         (async function main() {
 
             // Add your BOT ID below 
-            var theURL = "https://b838e0443024ea32b2f47862b85e99.03.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr74e_blogSiteCopilot/directline/token?api-version=2022-03-01-preview" // you can find the token URL via the mobile app channel configuration
+            var theURL = "https://default0b4b330c605f4f1589ee60defddb87.6d.environment.api.powerplatform.com/powervirtualagents/botsbyschema/crf66_agentForTest/directline/token?api-version=2022-03-01-preview" // you can find the token URL via the mobile app channel configuration
 
             var userId = clientApplication.account?.accountIdentifier != null ?
                 ("You-customized-prefix" + clientApplication.account.accountIdentifier).substr(0, 64)
