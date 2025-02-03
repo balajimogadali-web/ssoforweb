@@ -224,6 +224,8 @@
                             value: { text: "hello" }
                         }
                     });
+                   document.getElementById('userName').style.display = 'none';
+                   document.getElementById('login').style.display = 'none';
                     return next(action);
                 }               
                 if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
